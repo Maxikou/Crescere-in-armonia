@@ -1,0 +1,562 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lexend:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Red900: #520700;
+    --Red800: #A30F00;
+    --Red700: #F51400;
+    --Red600: #FF5748;
+    --Red500: #FFA29A;
+    --Red400: #FFB4AD;
+    --Red300: #FFC7C2;
+    --Red200: #FFDAD6;
+    --Red100: #FFECEA;
+    --Red50: #FFF6F5;
+}
+/*
+@media (min-width: 768px) {
+    html:not(.is-builder) body {
+        max-width: 430px !important;
+        margin: 0 auto !important;
+        overflow-x: hidden !important;
+    }
+}
+
+*/
+
+/*
+@media (min-width: 768px) {
+    body:not([data-builder-mode="true"]) {
+        max-width: 430px !important;
+        margin: 0 auto !important;
+        overflow-x: hidden !important;
+    }
+}
+*/
+body, p, span, div, h1, h2, h3, h4, h5, h6, em, i, strong, b {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+}
+/* EFFECTS */
+.blink-soft {
+    animation: blink-soft 1.2s ease-in-out infinite;
+}
+
+@keyframes blink-soft {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+}
+
+/* HEROES */
+
+
+.hero,
+div.hero > *,
+div[class*="hero"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 40px !important;
+    letter-spacing: 0 !important;
+    color: #520700 !important;
+    font-style: normal !important;
+}
+
+.hero-acceso,
+div.hero-acceso > *,
+div[class*="hero-acceso"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 40px !important;
+    letter-spacing: 0 !important;
+    color: #FF5748 !important;
+    font-style: normal !important;
+}
+
+.hero-italic,
+div.hero-italic > *,
+div[class*="hero-italic"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 40px !important;
+    letter-spacing: 0 !important;
+    color: #520700 !important;
+    font-style: italic !important;
+}
+
+.hero-chiaro,
+div.hero-chiaro > *,
+div[class*="hero-chiaro"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 40px !important;
+    letter-spacing: 0 !important;
+    color: #FFF6F5 !important;
+    font-style: normal !important;
+}
+
+.hero-rosso,
+div.hero-rosso > *,
+div[class*="hero-rosso"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 48px !important;
+    font-weight: 700 !important;
+    line-height: 40px !important;
+    letter-spacing: 0 !important;
+    color: #A30F00 !important;
+    font-style: normal !important;
+}
+
+/* BIG HEROES */
+
+.bighero,
+div.bighero > *,
+div[class*="bighero"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 100px !important;
+    font-weight: 700 !important;
+    line-height: 40px !important;
+    letter-spacing: 0 !important;
+    color: #520700 !important;
+    font-style: normal !important;
+}
+
+.big-hero-acceso,
+div.big-hero-acceso > *,
+div[class*="big-hero-acceso"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 100px !important;
+    font-weight: 700 !important;
+    line-height: 40px !important;
+    letter-spacing: 0 !important;
+    color: #FF5748 !important;
+    font-style: normal !important;
+}
+
+.bighero-bianco,
+div.bighero-bianco > *,
+div[class*="bighero"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 100px !important;
+    font-weight: 700 !important;
+    line-height: 100px !important;
+    letter-spacing: 0 !important;
+    color: #FFF6F5 !important;
+    font-style: normal !important;
+}
+
+
+/* LITTLE HEROES */
+
+
+.little-hero,
+div.little-hero > *,
+div[class*="little-hero"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 35px !important;
+    font-weight: 500 !important;
+    line-height: 30px !important;
+    letter-spacing: 0 !important;
+    color: #A30F00 !important;
+    font-style: normal !important;
+}
+
+.little-hero-blanc,
+div.little-hero-blanc > *,
+div[class*="little-hero-blanc"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 35px !important;
+    font-weight: 500 !important;
+    line-height: 30px !important;
+    letter-spacing: 0 !important;
+    color: #FFF6F5 !important;
+    font-style: normal !important;
+}
+
+.little-hero-acceso,
+div.little-hero-acceso > *,
+div[class*="little-hero-acceso"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 35px !important;
+    font-weight: 500 !important;
+    line-height: 30px !important;
+    letter-spacing: 0 !important;
+    color: #FF5748 !important;
+    font-style: normal !important;
+}
+
+
+
+/* SUBHERO - Sottotitolo */
+
+.subhero,
+div.subhero > *,
+div[class*="subhero"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    line-height: 20px !important;
+    letter-spacing: 0 !important;
+    color: #A30F00 !important;
+    font-style: normal !important;
+}
+
+.subhero-chiaro,
+div.subhero-chiaro > *, 
+div[class*="subhero-chiaro"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    line-height: 20px !important;
+    letter-spacing: 0 !important;
+    color: #FFF6F5 !important;
+    text-align: center !important;
+    font-style: normal !important;
+}
+
+.subhero-acceso,
+div.subhero-acceso > *, 
+div[class*="subhero-acceso"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+    letter-spacing: 0 !important;
+    color: #FF5748 !important;
+    text-align: center !important;
+    font-style: normal !important;
+}
+
+/* TEXT*/
+
+/* Scuro centrato */
+.text-scuro-center,
+div.text-scuro-center > *,
+div[class*="text-scuro-center"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.0 !important;
+    color: #520700 !important;
+    text-align: center !important;
+    font-style: normal !important;
+}
+
+/* TEXT  - Scuro sinitra */
+.text-scuro-left,
+div[class*="text-scuro-left"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 1.0 !important;
+    color: #520700 !important;
+    margin-left: 8px !important;
+    margin-right: 7px !important;
+    text-align: left !important;
+}
+
+/* Forza peso solo su p interno (poi ho capito che non si vedeva nel editor ma nella preview si*/
+.text-scuro-left .ProseMirror p {
+    font-weight: 400 !important;
+}
+/* TEXT  - Scuro sinistra bold (keep) */
+.text-scuro-left-bold,
+div[class*="text-scuro-left-bold"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.0 !important;
+    color: #520700 !important;
+    margin-left: 5px !important;
+    margin-right: 3px !important;
+    text-align: left !important;
+}
+
+.text-scuro-left-bold .ProseMirror p {
+    font-weight: 700 !important;
+}
+
+.text-scuro-left-colonna,
+div[class*="text-scuro-left-colonna"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.0 !important;
+    color: #520700 !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    text-align: left !important;
+}
+
+.text-scuro-left-bold .ProseMirror p {
+    font-weight: 700 !important;
+}
+
+.text-chiaro-center,
+div.text-chiaro-center > *,
+div[class*="text-chiaro-center"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    line-height: 1.0 !important;
+    margin-left: 5px !important;
+    margin-right: 3px !important;
+    color: #FFF6F5 !important;
+    text-align: center !important;
+}
+
+.text-chiaro-left,
+div[class*="text-chiaro-left"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.0 !important;
+    color: #FFF6F5 !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    text-align: left !important;
+}
+
+.text-chiaro-left .ProseMirror p {
+    font-weight: 600 !important;
+    font-style: normal !important;
+}
+
+/* LEGEND sotto i CTA */
+
+/* SCURA*/
+.legend-scuro,
+div.legend-scuro > *, 
+div[class*="legend-scuro"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0 !important;
+    color: #520700 !important;
+}
+
+.legend-chiaro,
+div.legend-chiaro > *, 
+div[class*="legend-chiaro"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0 !important;
+    color: #FFF6F5 !important;
+}
+/* CHIARA*/
+.legend-chiaro-italic,
+div.legend-chiaro-italic > *,
+div[class*="legend-chiaro-italic"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    font-style: italic !important;
+    line-height: 1.3 !important;
+    color: #FFF6F5 !important;
+    text-align: center !important;
+}
+
+/* Blocco sfondo rosso angoli tondi */
+
+.colonna-tonda,
+div.colonna-tonda,
+div[class*="colonna-tonda"] {
+    background-color: #FFA29A !important;
+    border-radius: 15px !important;
+    padding: 25px !important;
+    font-style: normal !important;
+}
+
+/*Contact form*/
+
+.contact-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px 10px;
+}
+
+.contact-wrapper h2 {
+    font-size: 28px;
+    color: var(--Red900);
+    margin-bottom: 10px;
+}
+
+.contact-wrapper .intro {
+    text-align: left;
+    font-size: 16px;
+    color: #3c0d00;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #3c0d00;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Lexend', sans-serif;
+    font-size: 15px;
+    color: #3c0d00;
+    background-color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button[type="submit"] {
+    background-color: var(--Red700);
+    color: white;
+    font-weight: 600;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--Red800);
+}
+
+
+/* -----------------------------------------------------------------
+   APPENDED PREFERENCES FROM LANDING — KEEPING EXACT ORIGINAL STYLE
+   (Overrides by order)
+-------------------------------------------------------------------*/
+
+
+/* BOTTONE ACCESO */
+/* === Bottone Acceso compatto (versione aggiornata) === */
+.bottone-acceso {
+    background-color: #FF5748 !important;
+    color: #FFF6F5 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 40px !important;
+          /* testo reale desktop */
+    font-weight: 600 !important;
+    line-height: 1.1em !important;
+    text-align: center !important;
+    border-radius: 10px !important;
+    padding: 10px 24px !important;
+ /*   display: inline-block !important; */
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap !important;
+      /* ✅ resta su una sola riga */
+    overflow: hidden !important;
+         /* evita rotture visive */
+    text-overflow: ellipsis !important;
+  /* se troppo lungo, taglia in modo elegante */
+}
+
+.bottone-acceso:hover {
+    transform: scale(1.05);
+}
+
+/* 🔸 Reset testo interno */
+.bottone-acceso p,
+.bottone-acceso span,
+.bottone-acceso a {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    white-space: inherit !important;
+ /* mantiene la regola del genitore */
+}
+
+/* 📱 Mobile - riduzione automatica */
+@media (max-width: 768px) {
+    .bottone-acceso {
+        font-size: clamp(22px, 6vw, 28px) !important;
+ /* si adatta alla larghezza */
+        padding: 8px 16px !important;
+    }
+}
+
+/* === Bottone Chiaro (uguale a Bottone Acceso ma con colori invertiti) === */
+.bottone-chiaro {
+    background-color: #FFF6F5 !important;
+   /* chiaro di base */
+    color: #FF5748 !important;
+              /* testo acceso */
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 40px !important;
+             /* stesso del bottone acceso */
+    font-weight: 600 !important;
+    line-height: 1.1em !important;
+    text-align: center !important;
+    border-radius: 10px !important;
+    padding: 10px 24px !important;
+    /*display: inline-block !important;*/
+    border: none !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap !important;
+         /* resta su una sola riga */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.bottone-chiaro:hover {
+    background-color: #FF5748 !important;
+   /* inverte i colori in hover */
+    color: #FFF6F5 !important;
+    transform: scale(1.05);
+}
+
+/* 🔸 Reset testo interno */
+.bottone-chiaro p,
+.bottone-chiaro span,
+.bottone-chiaro a {
+    font-family: inherit !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    white-space: inherit !important;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+    .bottone-chiaro {
+        font-size: 28px !important;
+        padding: 8px 16px !important;
+    }
+}
+</style>
