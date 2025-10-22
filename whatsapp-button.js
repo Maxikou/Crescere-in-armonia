@@ -35,22 +35,28 @@
 
 <script>
   // 🔧 CONFIGURAZIONE PERSONALIZZABILE
-  const orarioApertura = 10;   // ora di apertura (es. 9 = 09:00)
-  const orarioChiusura = 13:30;  // ora di chiusura (es. 18 = 18:00)
-  const numeroWhatsApp = "3288041561"; // il tuo numero in formato internazionale (senza +)
-  const messaggioPredefinito = "Ciao! Vorrei avere più informazioni.";
-  const emailFallback = "crescereinarmonia.martaciflu@gmail.com"; // dove mandare mail se cliccano fuori orario
-  const linkModuloContatto = "#custom-code-JbSFmmomx8"; // link al modulo contatto (opzionale)
+  const orarioApertura = 10;     // ora di apertura (10:00)
+  const orarioChiusura = 13.5;   // ora di chiusura (13:30 → 13.5)
+  const numeroWhatsApp = "393288041561"; // numero in formato internazionale (senza +)
+  const messaggioPredefinito = "Ciao! Vorrei avere più informazioni 😊";
+  const emailFallback = "crescereinarmonia.martaciflu@gmail.com"; // email di fallback
+  const linkModuloContatto = "#custom-code-JbSFmmomx8"; // link al modulo di contatto
 
-  const oraAttuale = new Date().getHours();
+  const oraAttuale = new Date().getHours() + (new Date().getMinutes() / 60);
   const inOrario = oraAttuale >= orarioApertura && oraAttuale < orarioChiusura;
   const btn = document.getElementById("whatsappButton");
 
   if (inOrario) {
     btn.href = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(messaggioPredefinito)}`;
+    btn.title = "Scrivici su WhatsApp";
   } else {
-    // Fuori orario → scegli se mail o modulo
-    btn.href = linkModuloContatto || `mailto:${emailFallback}?subject=Richiesta di contatto&body=Vorrei lasciare un messaggio.`;
-    btn.title = "Fuori orario: lasciaci un messaggio";
+    // Fuori orario → mail o modulo contatto
+    if (linkModuloContatto && linkModuloContatto !== "#") {
+      btn.href = linkModuloContatto;
+      btn.title = "Fuori orario: lasciaci un messaggio nel modulo di contatto";
+    } else {
+      btn.href = `mailto:${emailFallback}?subject=Richiesta di contatto&body=Vorrei lasciare un messaggio.`;
+      btn.title = "Fuori orario: lasciaci un messaggio via email";
+    }
   }
 </script>
