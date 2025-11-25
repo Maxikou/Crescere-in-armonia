@@ -343,6 +343,18 @@ div[class*="legend-scuro"] * {
     letter-spacing: 0 !important;
     color: #520700 !important;
 }
+/* LIGHT*/
+.legend-light,
+div.legend-light > *, 
+div[class*="legend-light"] * {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    line-height: 1.4 !important;
+    letter-spacing: 0 !important;
+    color: #FF5748 !important;
+    font-style: italic !important;
+}
 
 .legend-chiaro,
 div.legend-chiaro > *, 
@@ -558,5 +570,24 @@ button[type="submit"]:hover {
         font-size: 28px !important;
         padding: 8px 16px !important;
     }
+}
+
+.cta-rifiuto {
+    color: #FF5748 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    background-color: #FFF6F5 !important;
+    padding: 6px 6px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    font-style: italic !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.cta-rifiuto:hover {
+    color: #520700 !important;
 }
 </style>
